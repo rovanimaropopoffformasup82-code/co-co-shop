@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="co&co shop — Café de spécialité artisanal au cœur de Paris. Savoureuses pâtisseries maison, cafés d'origine, ambiance chaleureuse. Venez vivre l'expérience co&co." />
+  <meta name="keywords" content="café, coffee shop, pâtisseries, spécialité, Paris, artisanal, co&co shop" />
+  <meta name="author" content="co&co shop" />
+  <meta property="og:title" content="co&co shop — Café & Convivialité" />
+  <meta property="og:description" content="Votre pause café réinventée. Cafés de spécialité, pâtisseries maison, ambiance cosy." />
+  <meta property="og:type" content="website" />
+  <title>co&amp;co shop — Café &amp; Convivialité</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" role="banner">
+    <a href="#hero" class="logo" aria-label="co&amp;co shop - accueil">
+      <span class="logo-symbol">&amp;</span>
+      <span class="logo-text">co<em>&amp;</em>co shop</span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-menu" class="nav-links" role="navigation" aria-label="Navigation principale">
+      <a href="#menu">La carte</a>
+      <a href="#about">Notre histoire</a>
+      <a href="#reserve">Réserver</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero" aria-label="Présentation">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">☕ Café de spécialité · Paris 11e</p>
+        <h1>co<span>&amp;</span>co shop</h1>
+        <p class="hero-tagline">Votre pause café, réinventée.</p>
+        <p class="hero-sub">Des grains soigneusement sélectionnés, des pâtisseries faites chaque matin,<br class="hide-mobile"> et une chaleur humaine qui fait revenir.</p>
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-primary">Découvrir la carte</a>
+          <a href="#reserve" class="btn btn-outline">Réserver une table</a>
+        </div>
+      </div>
+      <a href="#menu" class="scroll-down" aria-label="Défiler vers le bas">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- ===== MENU ===== -->
+    <section id="menu" class="section section-menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">La carte</span>
+          <h2 id="menu-title">Nos spécialités</h2>
+          <p>Des saveurs authentiques, une qualité sans compromis.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Catégories de la carte">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="cafes">☕ Cafés</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="boissons">🍵 Boissons</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="patisseries">🥐 Pâtisseries</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="formules">🍽️ Formules</button>
+        </div>
+
+        <div id="tab-cafes" class="tab-panel active" role="tabpanel">
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">☕</div>
+              <div class="menu-card-body">
+                <h3>Espresso Signature</h3>
+                <p>Notre blend maison — notes de chocolat noir, caramel et noisette. Torréfié artisanalement.</p>
+                <span class="price">2,80 €</span>
+              </div>
+            </article>
+            <article class="menu-card featured">
+              <span class="badge">Favori</span>
+              <div class="menu-card-icon">☕</div>
+              <div class="menu-card-body">
+                <h3>Flat White Éthiopien</h3>
+                <p>Café single origin d'Éthiopie, lait de barista micro-moussé. Acidité fruitée, finale douce.</p>
+                <span class="price">4,50 €</span>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">☕</div>
+              <div class="menu-card-body">
+                <h3>Cortado Maison</h3>
+                <p>Ristretto allongé d'un trait de lait chaud. Équilibre parfait entre intensité et douceur.</p>
+                <span class="price">3,20 €</span>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🧊</div>
+              <div class="menu-card-body">
+                <h3>Cold Brew Vanille</h3>
+                <p>Infusé 18h à froid, légèrement sucré à la vanille de Madagascar. Rafraîchissant.</p>
+                <span class="price">4,80 €</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div id="tab-boissons" class="tab-panel" role="tabpanel" hidden>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">🍵</div>
+              <div class="menu-card-body">
+                <h3>Matcha Latte</h3>
+                <p>Matcha de cérémonie japonais, lait d'avoine artisanal, miel d'acacia.</p>
+                <span class="price">4,90 €</span>
+              </div>
+            </article>
+            <article class="menu-card featured">
+              <span class="badge">Nouveauté</span>
+              <div class="menu-card-icon">🥛</div>
+              <div class="menu-card-body">
+                <h3>Golden Milk</h3>
+                <p>Lait de coco, curcuma, gingembre frais, miel. La boisson qui réconforte.</p>
+                <span class="price">4,50 €</span>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🍋</div>
+              <div class="menu-card-body">
+                <h3>Limonade Maison</h3>
+                <p>Citrons pressés, sirop de lavande, eau pétillante. Fraîcheur garantie.</p>
+                <span class="price">3,80 €</span>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🫖</div>
+              <div class="menu-card-body">
+                <h3>Thé de Ceylan</h3>
+                <p>Sélection single-estate, servi avec lait froid ou nature selon votre envie.</p>
+                <span class="price">3,50 €</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div id="tab-patisseries" class="tab-panel" role="tabpanel" hidden>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-icon">🥐</div>
+              <div class="menu-card-body">
+                <h3>Croissant Beurre AOC</h3>
+                <p>Feuilletage maison, beurre Charentes-Poitou AOP. Croustillant, fondant, inoubliable.</p>
+                <span class="price">2,50 €</span>
+              </div>
+            </article>
+            <article class="menu-card featured">
+              <span class="badge">Signature</span>
+              <div class="menu-card-icon">🎂</div>
+              <div class="menu-card-body">
+                <h3>Cake Café Cardamome</h3>
+                <p>Recette exclusive — café du Guatemala, cardamome verte, glaçage noisette.</p>
+                <span class="price">4,20 €</span>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🍫</div>
+              <div class="menu-card-body">
+                <h3>Brownie Fondant</h3>
+                <p>Chocolat 70% Valrhona, noix de pécan, fleur de sel. Fondant à cœur.</p>
+                <span class="price">3,90 €</span>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-icon">🫐</div>
+              <div class="menu-card-body">
+                <h3>Muffin Myrtilles</h3>
+                <p>Myrtilles fraîches, streusel croustillant, sans conservateurs. Fait chaque matin.</p>
+                <span class="price">3,20 €</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div id="tab-formules" class="tab-panel" role="tabpanel" hidden>
+          <div class="menu-grid formules-grid">
+            <article class="menu-card formule-card">
+              <div class="formule-emoji">🌅</div>
+              <h3>Formule Matin</h3>
+              <p class="formule-desc">Le bon départ pour bien commencer la journée</p>
+              <ul>
+                <li>☕ Café au choix</li>
+                <li>🥐 Viennoiserie du jour</li>
+                <li>🍊 Jus d'orange frais</li>
+              </ul>
+              <span class="price formule-price">7,50 €</span>
+            </article>
+            <article class="menu-card formule-card featured">
+              <span class="badge">Populaire</span>
+              <div class="formule-emoji">☀️</div>
+              <h3>Formule Pause</h3>
+              <p class="formule-desc">La parenthèse parfaite dans votre journée</p>
+              <ul>
+                <li>☕ Café spécialité</li>
+                <li>🍰 Pâtisserie maison</li>
+                <li>💧 Eau minérale</li>
+              </ul>
+              <span class="price formule-price">9,00 €</span>
+            </article>
+            <article class="menu-card formule-card">
+              <div class="formule-emoji">🌿</div>
+              <h3>Formule Détox</h3>
+              <p class="formule-desc">Pour les matins où l'on prend soin de soi</p>
+              <ul>
+                <li>🍵 Boisson chaude bien-être</li>
+                <li>🫐 Smoothie bowl</li>
+                <li>🌰 Mix graines et fruits secs</li>
+              </ul>
+              <span class="price formule-price">10,50 €</span>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT / AMBIANCE ===== -->
+    <section id="about" class="section section-about" aria-labelledby="about-title">
+      <div class="container about-container">
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-img-wrap">
+            <div class="about-img about-img-1"></div>
+            <div class="about-img about-img-2"></div>
+          </div>
+          <div class="about-badge">
+            <strong>Depuis</strong>
+            <span>2019</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">Notre histoire</span>
+          <h2 id="about-title">Un café né d'une passion,<br>ancré dans un quartier.</h2>
+          <p>co<em>&amp;</em>co shop, c'est l'histoire de Camille et Côme — deux amis réunis par leur amour du bon café. En 2019, ils transforment une ancienne épicerie du 11e arrondissement en un refuge chaleureux, loin de l'agitation parisienne.</p>
+          <p>Chaque grain est sourcé directement auprès de petits producteurs responsables, en Éthiopie, au Guatemala, au Yémen. Chaque pâtisserie est préparée dès l'aube par Maya, leur pâtissière maison, avec des produits locaux et de saison.</p>
+          <div class="values-grid">
+            <div class="value-item">
+              <span class="value-icon">🌍</span>
+              <h4>Sourçage éthique</h4>
+              <p>Relations directes avec nos producteurs, commerce équitable.</p>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🌿</span>
+              <h4>Zéro déchet</h4>
+              <p>Emballages compostables, marc de café réutilisé en engrais.</p>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🤝</span>
+              <h4>Ancrage local</h4>
+              <p>Partenariats avec artisans et producteurs d'Île-de-France.</p>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">📚</span>
+              <h4>Partage du savoir</h4>
+              <p>Ateliers barista chaque samedi matin — ouvert à tous.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section section-testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title" class="sr-only">Avis de nos clients</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>« Le meilleur flat white de Paris, sans hésiter. L'ambiance est incroyable, j'y viens travailler presque tous les jours. »</p>
+            <footer>— Léa D., cliente fidèle</footer>
+          </blockquote>
+          <blockquote class="testimonial testimonial-center">
+            <p>« Les pâtisseries maison sont sublimes. Le cake café-cardamome est une révélation. Un endroit où l'on se sent vraiment bien. »</p>
+            <footer>— Thomas R., blogueur food</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>« L'atelier barista du samedi m'a complètement changé la vie ! Merci à Camille pour sa pédagogie et sa passion communicative. »</p>
+            <footer>— Sophie M., passionnée de café</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESERVE / CTA SECONDAIRE ===== -->
+    <section id="reserve" class="section section-reserve" aria-labelledby="reserve-title">
+      <div class="container reserve-container">
+        <div class="reserve-info">
+          <span class="section-tag">Nous rejoindre</span>
+          <h2 id="reserve-title">Réservez votre table</h2>
+          <p>Pour être sûr de trouver votre coin préféré, réservez à l'avance. Groupes, anniversaires, réunions de travail — nous nous adaptons à vos besoins.</p>
+          <ul class="hours-list">
+            <li><span>Lun – Ven</span><span>7h30 – 19h00</span></li>
+            <li><span>Samedi</span><span>8h00 – 20h00</span></li>
+            <li><span>Dimanche</span><span>9h00 – 17h00</span></li>
+          </ul>
+          <a href="tel:+33145678901" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.03 1.18 2 2 0 012 .03h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +33 1 45 67 89 01
+          </a>
+        </div>
+        <div class="reserve-form-wrap">
+          <form class="reserve-form" action="#" method="post" aria-label="Formulaire de réservation" novalidate>
+            <h3>Réserver en ligne</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Prénom</label>
+                <input type="text" id="fname" name="fname" placeholder="Votre prénom" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="lname">Nom</label>
+                <input type="text" id="lname" name="lname" placeholder="Votre nom" required autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Heure</label>
+                <select id="time" name="time" required>
+                  <option value="">Choisir</option>
+                  <option>8h00</option><option>9h00</option><option>10h00</option>
+                  <option>11h00</option><option>14h00</option><option>15h00</option>
+                  <option>16h00</option><option>17h00</option><option>18h00</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="guests">Nombre de personnes</label>
+              <select id="guests" name="guests" required>
+                <option value="">Choisir</option>
+                <option>1 personne</option><option>2 personnes</option><option>3 personnes</option>
+                <option>4 personnes</option><option>5 personnes</option><option>6 personnes et +</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.fr" required autocomplete="email" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Confirmer ma réservation</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="section section-newsletter" aria-labelledby="newsletter-title">
+      <div class="container newsletter-container">
+        <div class="newsletter-content">
+          <h2 id="newsletter-title">Restez dans la boucle</h2>
+          <p>Nouveaux cafés, événements, ateliers barista… Recevez nos actualités directement dans votre boîte mail.</p>
+        </div>
+        <form class="newsletter-form" action="#" method="post" aria-label="Inscription newsletter" novalidate>
+          <input type="email" name="newsletter-email" placeholder="votre@email.fr" required aria-label="Adresse email pour la newsletter" autocomplete="email" />
+          <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact" class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo logo-light" aria-label="co&amp;co shop - accueil">
+          <span class="logo-symbol">&amp;</span>
+          <span class="logo-text">co<em>&amp;</em>co shop</span>
+        </a>
+        <p>Un café de spécialité parisien où chaque tasse raconte une histoire.</p>
+        <div class="social-links" aria-label="Réseaux sociaux">
+          <a href="#" aria-label="Instagram co&amp;co shop" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook co&amp;co shop" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok co&amp;co shop" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigation footer">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#menu">La carte</a></li>
+          <li><a href="#about">Notre histoire</a></li>
+          <li><a href="#reserve">Réservation</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Nous trouver</h3>
+        <address>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            42 rue de la Roquette<br>75011 Paris, France
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.03 1.18 2 2 0 012 .03h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +33 1 45 67 89 01
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            bonjour@coco-shop.fr
+          </p>
+        </address>
+      </div>
+
+      <div class="footer-map" aria-label="Localisation">
+        <div class="map-placeholder">
+          <div class="map-pin" aria-hidden="true">📍</div>
+          <p>Métro Voltaire<br><small>Ligne 9</small></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 co&amp;co shop. Tous droits réservés.</p>
+        <p><a href="#">Mentions légales</a> · <a href="#">Politique de confidentialité</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
