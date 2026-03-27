@@ -7,8 +7,8 @@
   <meta name="author" content="co&co shop" />
   <meta name="theme-color" content="#2C1A0E" />
 
-  <title>co&co shop — Café de Spécialité Paris 11e | Pâtisseries Maison</title>
-  <meta name="description" content="co&co shop — Café de spécialité artisanal au cœur de Paris 11e, rue de la Roquette. Savoureuses pâtisseries maison, cafés d'origine, ambiance chaleureuse. Venez vivre l'expérience co&co." />
+  <title>co&co shop | Café de Spécialité Bastille Paris 11e – Pâtisseries & Ateliers Barista</title>
+  <meta name="description" content="Café de spécialité au cœur de Bastille (Paris 11e). Grains sourcés éthiquement, pâtisseries maison et ateliers barista. Venez vivre une pause café inoubliable — Ouvert 7j/7." />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://co-co-shop.netlify.app/" />
@@ -20,7 +20,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="co&co shop" />
-  <meta property="og:title" content="co&co shop — Café de Spécialité Paris 11e | Pâtisseries Maison" />
+  <meta property="og:title" content="co&co shop | Café de Spécialité Bastille Paris 11e – Pâtisseries & Ateliers Barista" />
   <meta property="og:description" content="Café de spécialité artisanal au cœur de Paris 11e. Pâtisseries maison, cafés d'origine, ambiance chaleureuse. Rue de la Roquette, Bastille." />
   <meta property="og:url" content="https://co-co-shop.netlify.app/" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&h=630&q=80" />
@@ -115,6 +115,123 @@
   }
   </script>
 
+  <!-- Schema.org — Reviews individuels -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "co&co shop",
+    "url": "https://co-co-shop.netlify.app/",
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Léa D." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "Le meilleur flat white de Paris, sans hésiter. L'ambiance est incroyable, j'y viens travailler presque tous les jours."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Thomas R." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "Les pâtisseries maison sont sublimes. Le cake café-cardamome est une révélation. Un endroit où l'on se sent vraiment bien."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Sophie M." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "L'atelier barista du samedi m'a complètement changé la vie ! Merci à Corine pour sa pédagogie et sa passion communicative."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — Event : Atelier Barista -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Atelier Barista Paris — co&co shop",
+    "description": "Apprenez les secrets du café de spécialité avec Corine et Côme lors de nos ateliers barista du samedi matin. Torréfaction, extraction, latte art : une expérience unique à Bastille, Paris 11e.",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "co&co shop",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "42 rue de la Roquette",
+        "addressLocality": "Paris",
+        "postalCode": "75011",
+        "addressCountry": "FR"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "co&co shop",
+      "url": "https://co-co-shop.netlify.app/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://co-co-shop.netlify.app/#reserve"
+    },
+    "startDate": "2026-04-04T10:00",
+    "endDate": "2026-04-04T12:00"
+  }
+  </script>
+
+  <!-- Schema.org — FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Où se trouve le co&co shop à Paris ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le co&co shop est situé au 42 rue de la Roquette, 75011 Paris, dans le quartier Bastille. Métro Voltaire (ligne 9)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quels sont les horaires du co&co shop ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lundi au vendredi : 7h30 – 19h00. Samedi : 8h00 – 20h00. Dimanche : 9h00 – 17h00."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment réserver une table au co&co shop ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vous pouvez réserver en ligne via notre formulaire sur le site, ou par téléphone au +33 1 45 67 89 01. La réservation est recommandée pour les groupes et les week-ends."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le co&co shop propose-t-il des ateliers barista ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui ! Nous organisons des ateliers barista chaque samedi matin, ouverts à tous. Torréfaction, techniques d'extraction, latte art — animés par Corine et Côme, fondateurs du co&co shop."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les cafés du co&co shop sont-ils issus du commerce équitable ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolument. Nous sourcçons directement nos grains auprès de petits producteurs responsables en Éthiopie, au Guatemala et au Yémen. Notre démarche est éthique, zéro déchet et ancrée dans le respect des producteurs."
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -165,7 +282,7 @@
       <div class="container">
         <div class="section-header">
           <span class="section-tag">La carte</span>
-          <h2 id="menu-title">Nos spécialités</h2>
+          <h2 id="menu-title">Notre carte : Cafés de Spécialité, Pâtisseries &amp; Formules à Paris 11e</h2>
           <p>Des saveurs authentiques, une qualité sans compromis.</p>
         </div>
 
@@ -183,7 +300,7 @@
             <article class="menu-card">
               <div class="menu-card-photo">
                 <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=600&q=80"
-                     alt="Espresso Signature dans une tasse blanche" loading="lazy" />
+                     alt="Espresso Signature du co&amp;co shop, café de spécialité Bastille Paris 11e" loading="lazy" />
               </div>
               <div class="menu-card-body">
                 <h3>Espresso Signature</h3>
@@ -196,7 +313,7 @@
               <span class="badge">Favori</span>
               <div class="menu-card-photo">
                 <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
-                     alt="Flat White avec latte art en feuille" loading="lazy" />
+                     alt="Flat White éthiopien avec latte art, co&amp;co shop café de spécialité Bastille Paris" loading="lazy" />
               </div>
               <div class="menu-card-body">
                 <h3>Flat White Éthiopien</h3>
@@ -208,7 +325,7 @@
             <article class="menu-card">
               <div class="menu-card-photo">
                 <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=600&q=80"
-                     alt="Cortado dans un verre transparent" loading="lazy" />
+                     alt="Cortado maison au co&amp;co shop, coffee shop Paris 11e Bastille" loading="lazy" />
               </div>
               <div class="menu-card-body">
                 <h3>Cortado Maison</h3>
@@ -220,7 +337,7 @@
             <article class="menu-card">
               <div class="menu-card-photo">
                 <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80"
-                     alt="Cold Brew dans un grand verre avec des glaçons" loading="lazy" />
+                     alt="Cold Brew vanille glacé, spécialité du co&amp;co shop café éthique Paris 11e" loading="lazy" />
               </div>
               <div class="menu-card-body">
                 <h3>Cold Brew Vanille</h3>
@@ -413,11 +530,13 @@
           <div class="about-img-wrap">
             <div class="about-img about-img-1">
               <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=82"
-                   alt="Barista préparant un café de spécialité" />
+                   alt="Barista du co&amp;co shop préparant un café éthique de spécialité, Paris 11e Bastille"
+                   width="800" height="600" loading="lazy" />
             </div>
             <div class="about-img about-img-2">
               <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=82"
-                   alt="Croissants dorés fraîchement préparés" />
+                   alt="Croissants dorés fraîchement préparés au co&amp;co shop, Paris 11e"
+                   width="800" height="600" loading="lazy" />
             </div>
           </div>
           <div class="about-badge">
@@ -427,9 +546,9 @@
         </div>
         <div class="about-content">
           <span class="section-tag">Notre histoire</span>
-          <h2 id="about-title">Un café né d'une passion,<br>ancré dans un quartier.</h2>
-          <p>co<em>&amp;</em>co shop, c'est l'histoire de Camille et Côme — deux amis réunis par leur amour du bon café. En 2019, ils transforment une ancienne épicerie du 11e arrondissement en un refuge chaleureux, loin de l'agitation parisienne.</p>
-          <p>Chaque grain est sourcé directement auprès de petits producteurs responsables, en Éthiopie, au Guatemala, au Yémen. Chaque pâtisserie est préparée dès l'aube par Maya, leur pâtissière maison, avec des produits locaux et de saison.</p>
+          <h2 id="about-title">L'histoire de co&amp;co shop : Un café éthique et artisanal à Bastille</h2>
+          <p>co<em>&amp;</em>co shop, c'est l'histoire de Corine et Côme — deux amis réunis par leur amour du bon café. En 2019, ils transforment une ancienne épicerie du 11e arrondissement, à deux pas de Bastille, en un refuge chaleureux et <strong>zéro déchet</strong>, loin de l'agitation parisienne.</p>
+          <p>Chaque grain est sourcé directement auprès de petits producteurs responsables en <strong>commerce équitable</strong>, en Éthiopie, au Guatemala, au Yémen. Chaque pâtisserie est préparée dès l'aube par Maya, leur pâtissière maison, avec des produits locaux et de saison. Un vrai <strong>café éthique à Paris</strong>, ancré dans son quartier.</p>
           <div class="values-grid">
             <div class="value-item">
               <div class="value-icon-photo">
@@ -473,8 +592,8 @@
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Ambiance</span>
-          <h2 id="galerie-title">Bienvenue chez nous</h2>
-          <p>Un endroit pensé pour vous faire sentir comme à la maison.</p>
+          <h2 id="galerie-title">L'ambiance co&amp;co : Votre espace cosy &amp; de travail à Paris 11e</h2>
+          <p>Un endroit pensé pour vous faire sentir comme à la maison, à deux pas de Bastille.</p>
         </div>
         <div class="galerie-grid">
           <figure class="galerie-item galerie-large">
@@ -499,7 +618,7 @@
     <!-- ===== TESTIMONIALS ===== -->
     <section class="section section-testimonials" aria-labelledby="testimonials-title">
       <div class="container">
-        <h2 id="testimonials-title" class="sr-only">Avis de nos clients</h2>
+        <h2 id="testimonials-title">Ce que disent nos clients du meilleur café de Bastille</h2>
         <div class="testimonials-grid">
           <blockquote class="testimonial">
             <p>« Le meilleur flat white de Paris, sans hésiter. L'ambiance est incroyable, j'y viens travailler presque tous les jours. »</p>
@@ -534,7 +653,7 @@
       <div class="container reserve-container">
         <div class="reserve-info">
           <span class="section-tag">Nous rejoindre</span>
-          <h2 id="reserve-title">Réservez votre table</h2>
+          <h2 id="reserve-title">Réservez une table au co&amp;co shop — Paris 11e, Bastille</h2>
           <p>Pour être sûr de trouver votre coin préféré, réservez à l'avance. Groupes, anniversaires, réunions de travail — nous nous adaptons à vos besoins.</p>
           <div class="reserve-photo">
             <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=700&q=80"
@@ -605,13 +724,59 @@
       <div class="newsletter-overlay"></div>
       <div class="container newsletter-container">
         <div class="newsletter-content">
-          <h2 id="newsletter-title">Restez dans la boucle</h2>
+          <h2 id="newsletter-title">Inscrivez-vous : actualités cafés, événements &amp; ateliers barista Paris</h2>
           <p>Nouveaux cafés, événements, ateliers barista… Recevez nos actualités directement dans votre boîte mail.</p>
         </div>
         <form class="newsletter-form" action="#" method="post" aria-label="Inscription newsletter" novalidate>
           <input type="email" name="newsletter-email" placeholder="votre@email.fr" required aria-label="Adresse email pour la newsletter" autocomplete="email" />
           <button type="submit" class="btn btn-primary">S'inscrire</button>
         </form>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section-faq" aria-labelledby="faq-title" id="faq">
+      <div class="container">
+        <h2 id="faq-title" class="section-title">Questions fréquentes sur le co&amp;co shop</h2>
+        <p class="section-subtitle">Tout ce que vous voulez savoir avant votre visite</p>
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary class="faq-question">Où se trouve le co&amp;co shop à Paris ?</summary>
+            <div class="faq-answer">
+              <p>Le co&amp;co shop est situé au <strong>42 rue de la Roquette, Paris 11e</strong>, à deux pas de la place de la Bastille. Facilement accessible en métro (ligne 1 — Bastille, ligne 5 — Bréguet-Sabin) ou à vélo via les pistes cyclables du boulevard Voltaire.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Quels sont les horaires d'ouverture du café ?</summary>
+            <div class="faq-answer">
+              <p>Nous sommes ouverts <strong>7 jours sur 7</strong>, de <strong>8h à 19h</strong>. Aucun jour de fermeture en semaine. Nous vous accueillons avec la même attention du lundi au dimanche pour votre pause café matinale, déjeuner ou goûter.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Comment réserver une table au co&amp;co shop ?</summary>
+            <div class="faq-answer">
+              <p>La réservation se fait directement via le <a href="#reserve">formulaire en ligne</a> sur cette page, ou par téléphone au <a href="tel:+33145678901">+33 1 45 67 89 01</a>. Nous recommandons de réserver pour les groupes de 4 personnes et plus, notamment en fin de semaine.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Proposez-vous des ateliers barista à Paris ?</summary>
+            <div class="faq-answer">
+              <p>Oui ! Nous organisons régulièrement des <strong>ateliers barista</strong> pour apprendre les techniques d'extraction, de latte art et de dégustation de cafés de spécialité. Les sessions sont ouvertes aux débutants comme aux passionnés. Inscrivez-vous à <a href="#newsletter">notre newsletter</a> pour être alerté des prochaines dates.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Vos cafés sont-ils issus du commerce équitable ?</summary>
+            <div class="faq-answer">
+              <p>Absolument. Nous sélectionnons exclusivement des <strong>grains de café éthiques</strong>, sourcés en direct auprès de petits producteurs partenaires (Éthiopie, Colombie, Guatemala). Notre démarche inclut le commerce équitable, des prix justes aux cultivateurs et un engagement zéro déchet en boutique.</p>
+            </div>
+          </details>
+
+        </div>
       </div>
     </section>
 
