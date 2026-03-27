@@ -124,3 +124,14 @@ revealEls.forEach(el => {
   el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
   revealObserver.observe(el);
 });
+
+// ---- FAQ accordion : ferme les autres au clic ----
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('toggle', () => {
+    if (item.open) {
+      document.querySelectorAll('.faq-item[open]').forEach(other => {
+        if (other !== item) other.removeAttribute('open');
+      });
+    }
+  });
+});
