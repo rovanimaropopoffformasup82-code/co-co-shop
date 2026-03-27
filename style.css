@@ -666,6 +666,17 @@ h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
 .hours-list li span:first-child { font-weight: 700; color: var(--brown); }
 .hours-list li span:last-child  { color: var(--text-muted); }
 
+.maps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold);
+  transition: color var(--transition);
+}
+.maps-link:hover { color: var(--gold-light); }
+
 .contact-link {
   display: inline-flex;
   align-items: center;
