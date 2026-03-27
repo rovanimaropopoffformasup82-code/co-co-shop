@@ -260,6 +260,16 @@ h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
 }
 .hero-content h1 span { color: var(--gold); }
 
+.h1-sub {
+  display: block;
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
+  font-weight: 400;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+  margin-top: 0.4rem;
+  opacity: 0.9;
+}
+
 .hero-tagline {
   font-family: var(--font-serif);
   font-size: clamp(1.2rem, 3vw, 1.8rem);
