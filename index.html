@@ -8,11 +8,12 @@
   <meta name="author" content="co&co shop" />
   <meta property="og:title" content="co&co shop — Café & Convivialité" />
   <meta property="og:description" content="Votre pause café réinventée. Cafés de spécialité, pâtisseries maison, ambiance cosy." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&q=80" />
   <meta property="og:type" content="website" />
   <title>co&amp;co shop — Café &amp; Convivialité</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -29,6 +30,7 @@
     <nav id="nav-menu" class="nav-links" role="navigation" aria-label="Navigation principale">
       <a href="#menu">La carte</a>
       <a href="#about">Notre histoire</a>
+      <a href="#galerie">Galerie</a>
       <a href="#reserve">Réserver</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -40,7 +42,7 @@
     <section id="hero" class="hero" aria-label="Présentation">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <p class="hero-eyebrow">☕ Café de spécialité · Paris 11e</p>
+        <p class="hero-eyebrow">Café de spécialité · Paris 11e</p>
         <h1>co<span>&amp;</span>co shop</h1>
         <p class="hero-tagline">Votre pause café, réinventée.</p>
         <p class="hero-sub">Des grains soigneusement sélectionnés, des pâtisseries faites chaque matin,<br class="hide-mobile"> et une chaleur humaine qui fait revenir.</p>
@@ -64,162 +66,236 @@
         </div>
 
         <div class="menu-tabs" role="tablist" aria-label="Catégories de la carte">
-          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="cafes">☕ Cafés</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-tab="boissons">🍵 Boissons</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-tab="patisseries">🥐 Pâtisseries</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-tab="formules">🍽️ Formules</button>
+          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="cafes">Cafés</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="boissons">Boissons</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="patisseries">Pâtisseries</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="formules">Formules</button>
         </div>
 
+        <!-- CAFÉS -->
         <div id="tab-cafes" class="tab-panel active" role="tabpanel">
           <div class="menu-grid">
+
             <article class="menu-card">
-              <div class="menu-card-icon">☕</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=600&q=80"
+                     alt="Espresso Signature dans une tasse blanche" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Espresso Signature</h3>
                 <p>Notre blend maison — notes de chocolat noir, caramel et noisette. Torréfié artisanalement.</p>
                 <span class="price">2,80 €</span>
               </div>
             </article>
+
             <article class="menu-card featured">
               <span class="badge">Favori</span>
-              <div class="menu-card-icon">☕</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+                     alt="Flat White avec latte art en feuille" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Flat White Éthiopien</h3>
                 <p>Café single origin d'Éthiopie, lait de barista micro-moussé. Acidité fruitée, finale douce.</p>
                 <span class="price">4,50 €</span>
               </div>
             </article>
+
             <article class="menu-card">
-              <div class="menu-card-icon">☕</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=600&q=80"
+                     alt="Cortado dans un verre transparent" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Cortado Maison</h3>
                 <p>Ristretto allongé d'un trait de lait chaud. Équilibre parfait entre intensité et douceur.</p>
                 <span class="price">3,20 €</span>
               </div>
             </article>
+
             <article class="menu-card">
-              <div class="menu-card-icon">🧊</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80"
+                     alt="Cold Brew dans un grand verre avec des glaçons" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Cold Brew Vanille</h3>
                 <p>Infusé 18h à froid, légèrement sucré à la vanille de Madagascar. Rafraîchissant.</p>
                 <span class="price">4,80 €</span>
               </div>
             </article>
+
           </div>
         </div>
 
+        <!-- BOISSONS -->
         <div id="tab-boissons" class="tab-panel" role="tabpanel" hidden>
           <div class="menu-grid">
+
             <article class="menu-card">
-              <div class="menu-card-icon">🍵</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80"
+                     alt="Matcha Latte vert vif dans un bol" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Matcha Latte</h3>
                 <p>Matcha de cérémonie japonais, lait d'avoine artisanal, miel d'acacia.</p>
                 <span class="price">4,90 €</span>
               </div>
             </article>
+
             <article class="menu-card featured">
               <span class="badge">Nouveauté</span>
-              <div class="menu-card-icon">🥛</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=80"
+                     alt="Golden Milk au curcuma dans une tasse blanche" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Golden Milk</h3>
                 <p>Lait de coco, curcuma, gingembre frais, miel. La boisson qui réconforte.</p>
                 <span class="price">4,50 €</span>
               </div>
             </article>
+
             <article class="menu-card">
-              <div class="menu-card-icon">🍋</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=600&q=80"
+                     alt="Limonade artisanale avec citron et menthe fraîche" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Limonade Maison</h3>
                 <p>Citrons pressés, sirop de lavande, eau pétillante. Fraîcheur garantie.</p>
                 <span class="price">3,80 €</span>
               </div>
             </article>
+
             <article class="menu-card">
-              <div class="menu-card-icon">🫖</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80"
+                     alt="Théière avec tasse de thé fumant" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Thé de Ceylan</h3>
                 <p>Sélection single-estate, servi avec lait froid ou nature selon votre envie.</p>
                 <span class="price">3,50 €</span>
               </div>
             </article>
+
           </div>
         </div>
 
+        <!-- PÂTISSERIES -->
         <div id="tab-patisseries" class="tab-panel" role="tabpanel" hidden>
           <div class="menu-grid">
+
             <article class="menu-card">
-              <div class="menu-card-icon">🥐</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80"
+                     alt="Croissants dorés et feuilletés sur une planche en bois" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Croissant Beurre AOC</h3>
                 <p>Feuilletage maison, beurre Charentes-Poitou AOP. Croustillant, fondant, inoubliable.</p>
                 <span class="price">2,50 €</span>
               </div>
             </article>
+
             <article class="menu-card featured">
               <span class="badge">Signature</span>
-              <div class="menu-card-icon">🎂</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
+                     alt="Tranche de cake moelleux au café" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Cake Café Cardamome</h3>
                 <p>Recette exclusive — café du Guatemala, cardamome verte, glaçage noisette.</p>
                 <span class="price">4,20 €</span>
               </div>
             </article>
+
             <article class="menu-card">
-              <div class="menu-card-icon">🍫</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=600&q=80"
+                     alt="Brownies au chocolat fondants avec noix" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Brownie Fondant</h3>
                 <p>Chocolat 70% Valrhona, noix de pécan, fleur de sel. Fondant à cœur.</p>
                 <span class="price">3,90 €</span>
               </div>
             </article>
+
             <article class="menu-card">
-              <div class="menu-card-icon">🫐</div>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=600&q=80"
+                     alt="Muffin aux myrtilles fraîches avec streusel doré" loading="lazy" />
+              </div>
               <div class="menu-card-body">
                 <h3>Muffin Myrtilles</h3>
                 <p>Myrtilles fraîches, streusel croustillant, sans conservateurs. Fait chaque matin.</p>
                 <span class="price">3,20 €</span>
               </div>
             </article>
+
           </div>
         </div>
 
+        <!-- FORMULES -->
         <div id="tab-formules" class="tab-panel" role="tabpanel" hidden>
           <div class="menu-grid formules-grid">
+
             <article class="menu-card formule-card">
-              <div class="formule-emoji">🌅</div>
-              <h3>Formule Matin</h3>
-              <p class="formule-desc">Le bon départ pour bien commencer la journée</p>
-              <ul>
-                <li>☕ Café au choix</li>
-                <li>🥐 Viennoiserie du jour</li>
-                <li>🍊 Jus d'orange frais</li>
-              </ul>
-              <span class="price formule-price">7,50 €</span>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80"
+                     alt="Petit déjeuner complet avec café et viennoiseries" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h3>Formule Matin</h3>
+                <p class="formule-desc">Le bon départ pour bien commencer la journée</p>
+                <ul>
+                  <li>Café au choix</li>
+                  <li>Viennoiserie du jour</li>
+                  <li>Jus d'orange frais</li>
+                </ul>
+                <span class="price formule-price">7,50 €</span>
+              </div>
             </article>
+
             <article class="menu-card formule-card featured">
               <span class="badge">Populaire</span>
-              <div class="formule-emoji">☀️</div>
-              <h3>Formule Pause</h3>
-              <p class="formule-desc">La parenthèse parfaite dans votre journée</p>
-              <ul>
-                <li>☕ Café spécialité</li>
-                <li>🍰 Pâtisserie maison</li>
-                <li>💧 Eau minérale</li>
-              </ul>
-              <span class="price formule-price">9,00 €</span>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=80"
+                     alt="Table de café avec café spécialité et pâtisserie" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h3>Formule Pause</h3>
+                <p class="formule-desc">La parenthèse parfaite dans votre journée</p>
+                <ul>
+                  <li>Café spécialité</li>
+                  <li>Pâtisserie maison</li>
+                  <li>Eau minérale</li>
+                </ul>
+                <span class="price formule-price">9,00 €</span>
+              </div>
             </article>
+
             <article class="menu-card formule-card">
-              <div class="formule-emoji">🌿</div>
-              <h3>Formule Détox</h3>
-              <p class="formule-desc">Pour les matins où l'on prend soin de soi</p>
-              <ul>
-                <li>🍵 Boisson chaude bien-être</li>
-                <li>🫐 Smoothie bowl</li>
-                <li>🌰 Mix graines et fruits secs</li>
-              </ul>
-              <span class="price formule-price">10,50 €</span>
+              <div class="menu-card-photo">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=700&q=80"
+                     alt="Bol healthy avec fruits, graines et smoothie" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h3>Formule Détox</h3>
+                <p class="formule-desc">Pour les matins où l'on prend soin de soi</p>
+                <ul>
+                  <li>Boisson chaude bien-être</li>
+                  <li>Smoothie bowl</li>
+                  <li>Mix graines et fruits secs</li>
+                </ul>
+                <span class="price formule-price">10,50 €</span>
+              </div>
             </article>
+
           </div>
         </div>
 
@@ -231,8 +307,14 @@
       <div class="container about-container">
         <div class="about-visual" aria-hidden="true">
           <div class="about-img-wrap">
-            <div class="about-img about-img-1"></div>
-            <div class="about-img about-img-2"></div>
+            <div class="about-img about-img-1">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=82"
+                   alt="Barista préparant un café de spécialité" />
+            </div>
+            <div class="about-img about-img-2">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=82"
+                   alt="Croissants dorés fraîchement préparés" />
+            </div>
           </div>
           <div class="about-badge">
             <strong>Depuis</strong>
@@ -246,26 +328,71 @@
           <p>Chaque grain est sourcé directement auprès de petits producteurs responsables, en Éthiopie, au Guatemala, au Yémen. Chaque pâtisserie est préparée dès l'aube par Maya, leur pâtissière maison, avec des produits locaux et de saison.</p>
           <div class="values-grid">
             <div class="value-item">
-              <span class="value-icon">🌍</span>
+              <div class="value-icon-photo">
+                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=120&q=75"
+                     alt="Grains de café d'origine" loading="lazy" />
+              </div>
               <h4>Sourçage éthique</h4>
               <p>Relations directes avec nos producteurs, commerce équitable.</p>
             </div>
             <div class="value-item">
-              <span class="value-icon">🌿</span>
+              <div class="value-icon-photo">
+                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=120&q=75"
+                     alt="Plantes et verdure naturelles" loading="lazy" />
+              </div>
               <h4>Zéro déchet</h4>
               <p>Emballages compostables, marc de café réutilisé en engrais.</p>
             </div>
             <div class="value-item">
-              <span class="value-icon">🤝</span>
+              <div class="value-icon-photo">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=120&q=75"
+                     alt="Personnes discutant dans un café" loading="lazy" />
+              </div>
               <h4>Ancrage local</h4>
               <p>Partenariats avec artisans et producteurs d'Île-de-France.</p>
             </div>
             <div class="value-item">
-              <span class="value-icon">📚</span>
+              <div class="value-icon-photo">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=120&q=75"
+                     alt="Atelier barista avec équipement professionnel" loading="lazy" />
+              </div>
               <h4>Partage du savoir</h4>
               <p>Ateliers barista chaque samedi matin — ouvert à tous.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERIE PHOTO ===== -->
+    <section id="galerie" class="section section-galerie" aria-labelledby="galerie-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ambiance</span>
+          <h2 id="galerie-title">Bienvenue chez nous</h2>
+          <p>Un endroit pensé pour vous faire sentir comme à la maison.</p>
+        </div>
+        <div class="galerie-grid">
+          <figure class="galerie-item galerie-large">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=82"
+                 alt="Intérieur chaleureux du co&co shop avec comptoir en bois" loading="lazy" />
+          </figure>
+          <figure class="galerie-item">
+            <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&fit=crop&w=600&q=80"
+                 alt="Zone de travail confortable avec café et ordinateur" loading="lazy" />
+          </figure>
+          <figure class="galerie-item">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80"
+                 alt="Groupe d'amis dégustant leur café ensemble" loading="lazy" />
+          </figure>
+          <figure class="galerie-item galerie-wide">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=82"
+                 alt="Vue du comptoir avec les tasses et équipements barista" loading="lazy" />
+          </figure>
+          <figure class="galerie-item">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=80"
+                 alt="Grains de café torréfiés sélectionnés à la main" loading="lazy" />
+          </figure>
         </div>
       </div>
     </section>
@@ -277,15 +404,27 @@
         <div class="testimonials-grid">
           <blockquote class="testimonial">
             <p>« Le meilleur flat white de Paris, sans hésiter. L'ambiance est incroyable, j'y viens travailler presque tous les jours. »</p>
-            <footer>— Léa D., cliente fidèle</footer>
+            <footer>
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&h=80&q=75"
+                   alt="Portrait de Léa D." loading="lazy" />
+              <span>Léa D., cliente fidèle</span>
+            </footer>
           </blockquote>
           <blockquote class="testimonial testimonial-center">
             <p>« Les pâtisseries maison sont sublimes. Le cake café-cardamome est une révélation. Un endroit où l'on se sent vraiment bien. »</p>
-            <footer>— Thomas R., blogueur food</footer>
+            <footer>
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=80&h=80&q=75"
+                   alt="Portrait de Thomas R." loading="lazy" />
+              <span>Thomas R., blogueur food</span>
+            </footer>
           </blockquote>
           <blockquote class="testimonial">
             <p>« L'atelier barista du samedi m'a complètement changé la vie ! Merci à Camille pour sa pédagogie et sa passion communicative. »</p>
-            <footer>— Sophie M., passionnée de café</footer>
+            <footer>
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&h=80&q=75"
+                   alt="Portrait de Sophie M." loading="lazy" />
+              <span>Sophie M., passionnée de café</span>
+            </footer>
           </blockquote>
         </div>
       </div>
@@ -298,6 +437,10 @@
           <span class="section-tag">Nous rejoindre</span>
           <h2 id="reserve-title">Réservez votre table</h2>
           <p>Pour être sûr de trouver votre coin préféré, réservez à l'avance. Groupes, anniversaires, réunions de travail — nous nous adaptons à vos besoins.</p>
+          <div class="reserve-photo">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=700&q=80"
+                 alt="Table réservée dans l'ambiance chaleureuse du co&co shop" loading="lazy" />
+          </div>
           <ul class="hours-list">
             <li><span>Lun – Ven</span><span>7h30 – 19h00</span></li>
             <li><span>Samedi</span><span>8h00 – 20h00</span></li>
@@ -356,6 +499,11 @@
 
     <!-- ===== NEWSLETTER ===== -->
     <section class="section section-newsletter" aria-labelledby="newsletter-title">
+      <div class="newsletter-bg">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1920&q=75"
+             alt="" role="presentation" loading="lazy" />
+      </div>
+      <div class="newsletter-overlay"></div>
       <div class="container newsletter-container">
         <div class="newsletter-content">
           <h2 id="newsletter-title">Restez dans la boucle</h2>
@@ -398,6 +546,7 @@
           <li><a href="#hero">Accueil</a></li>
           <li><a href="#menu">La carte</a></li>
           <li><a href="#about">Notre histoire</a></li>
+          <li><a href="#galerie">Galerie</a></li>
           <li><a href="#reserve">Réservation</a></li>
         </ul>
       </nav>
@@ -420,10 +569,15 @@
         </address>
       </div>
 
-      <div class="footer-map" aria-label="Localisation">
-        <div class="map-placeholder">
-          <div class="map-pin" aria-hidden="true">📍</div>
-          <p>Métro Voltaire<br><small>Ligne 9</small></p>
+      <div class="footer-photos" aria-hidden="true">
+        <h3>Galerie</h3>
+        <div class="footer-photo-grid">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy" />
         </div>
       </div>
     </div>
